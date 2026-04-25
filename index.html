@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>PSX Market Wrap-Up | Week Ending April 24, 2026</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(145deg, #eef2f5 0%, #e0e8ef 100%);
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      padding: 2rem 1rem;
+      color: #1a2c3e;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    /* card style */
+    .card {
+      background: rgba(255, 255, 255, 0.97);
+      backdrop-filter: blur(0px);
+      border-radius: 2rem;
+      box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.03);
+      padding: 1.75rem 2rem;
+      margin-bottom: 2rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      border: 1px solid rgba(255,255,255,0.5);
+    }
+
+    .card:hover {
+      box-shadow: 0 28px 40px -16px rgba(0, 0, 0, 0.18);
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #1a472a, #0f2b1c);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      letter-spacing: -0.01em;
+      display: inline-block;
+      margin-bottom: 0.25rem;
+    }
+
+    .subhead {
+      color: #4a627a;
+      border-left: 4px solid #2e7d32;
+      padding-left: 1rem;
+      margin: 0.5rem 0 1rem 0;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+
+    .badge-date {
+      background: #1e3a2f;
+      color: #e2f0e5;
+      padding: 0.3rem 1rem;
+      border-radius: 40px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      display: inline-block;
+      margin-bottom: 0.8rem;
+    }
+
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.5rem;
+      margin: 1.5rem 0 0.8rem;
+    }
+
+    .kpi-card {
+      background: #f8fafd;
+      border-radius: 1.5rem;
+      padding: 1.2rem 0.8rem;
+      text-align: center;
+      border: 1px solid #e2edf2;
+      transition: all 0.2s;
+    }
+
+    .kpi-label {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+      color: #5d7184;
+    }
+
+    .kpi-value {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: #1e2f3d;
+      margin-top: 0.4rem;
+      word-break: break-word;
+    }
+
+    .positive {
+      color: #1f7b4d;
+    }
+
+    .negative {
+      color: #c23d2b;
+    }
+
+    .trend-up {
+      color: #1f7b4d;
+      font-weight: 600;
+    }
+
+    .trend-down {
+      color: #c23d2b;
+      font-weight: 600;
+    }
+
+    .flex-between {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 1rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.2rem 0;
+      font-size: 0.9rem;
+    }
+
+    th {
+      text-align: left;
+      padding: 0.8rem 0.5rem 0.8rem 0;
+      border-bottom: 2px solid #e0eaf1;
+      color: #2c4b36;
+      font-weight: 600;
+    }
+
+    td {
+      padding: 0.6rem 0.5rem 0.6rem 0;
+      border-bottom: 1px solid #eef2f5;
+      font-weight: 500;
+    }
+
+    .sector-table td:last-child, .sector-table th:last-child {
+      text-align: right;
+    }
+
+    .stock-highlight {
+      background: #fef7e0;
+      border-radius: 1rem;
+      padding: 1rem;
+    }
+
+    .grid-2col {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.8rem;
+    }
+
+    .ipo-card {
+      background: #fefaf5;
+      border-radius: 1.2rem;
+      padding: 1.2rem;
+      border-left: 5px solid #2e7d32;
+    }
+
+    hr {
+      margin: 1.5rem 0;
+      border: 0;
+      height: 1px;
+      background: linear-gradient(90deg, #cbdae6, transparent);
+    }
+
+    .footer-note {
+      font-size: 0.7rem;
+      text-align: center;
+      color: #6b7f8e;
+      margin-top: 1rem;
+      border-top: 1px solid #cfdfe9;
+      padding-top: 1.5rem;
+    }
+
+    @media (max-width: 680px) {
+      .card {
+        padding: 1rem 1.2rem;
+      }
+      .kpi-value {
+        font-size: 1.4rem;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <!-- header card -->
+  <div class="card">
+    <div class="badge-date">📆 WEEK ENDING: APRIL 24, 2026</div>
+    <h1>🇵🇰 MarketDesk PSX · Detailed Market Wrap-Up</h1>
+    <div class="subhead">Geopolitical volatility • Sharp intraday reversal • Fresh IPOs & corporate actions</div>
+    <div class="kpi-grid">
+      <div class="kpi-card"><div class="kpi-label">KSE-100 (Close)</div><div class="kpi-value">170,672.04</div></div>
+      <div class="kpi-card"><div class="kpi-label">Weekly Change</div><div class="kpi-value negative">-3,266.97 <span style="font-size:1rem;">pts</span></div><div style="font-size:0.8rem;" class="negative">▼ -1.88%</div></div>
+      <div class="kpi-card"><div class="kpi-label">Fiscal Year (FY26)</div><div class="kpi-value positive">+45,045 pts</div><div style="font-size:0.75rem;">▲ +35.86%</div></div>
+      <div class="kpi-card"><div class="kpi-label">Friday Volume</div><div class="kpi-value">1.19B</div><div style="font-size:0.7rem;">shares | Rs39.68B</div></div>
+    </div>
+    <div class="flex-between" style="margin-top:0.25rem;">
+      <span><span style="font-weight:600;">🏆 Advancers</span> 247 &nbsp;|&nbsp; <span style="font-weight:600;">📉 Decliners</span> 196</span>
+      <span><span style="font-weight:600;">📊 Market Cap</span> Rs18.88T</span>
+    </div>
+  </div>
+
+  <!-- 1. SUMMARY OF PSX & RELATED NEWS -->
+  <div class="card">
+    <h2 style="font-size:1.55rem; margin-bottom:0.5rem;">📰 1. Summary of PSX & related news</h2>
+    <p style="margin-bottom:1rem; line-height:1.5;">The KSE-100 snapped its two-week recovery, sliding <strong class="negative">-1.88% WoW</strong> amid escalating Middle East tensions and oil price shocks. However, Friday’s dramatic session saw the index surge <strong>+1,498 points (+0.89%)</strong> after falling over 2,000 points intraday, fuelled by diplomatic expectations regarding <strong>Iran–US peace talks</strong> in Islamabad.</p>
+    
+    <div class="grid-2col" style="margin-bottom: 1rem;">
+      <div>
+        <h3 style="font-weight:600; margin-bottom: 0.6rem;">🌍 Geopolitical & Macro Drivers</h3>
+        <ul style="padding-left: 1.3rem; line-height:1.5;">
+          <li>Crude oil near <strong>$106/barrel</strong> due to Strait of Hormuz closure risk.</li>
+          <li>Iranian Foreign Minister <strong>Abbas Araghchi</strong> visit to Islamabad fuels hopes for de‑escalation.</li>
+          <li>Pakistan forms high-level committee to build <strong>strategic petroleum reserves</strong>.</li>
+          <li>Central bank confirmed repayment of <strong>$3.45 billion to UAE</strong> — strengthening external buffers.</li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="font-weight:600; margin-bottom: 0.6rem;">🏦 Sector Performance (Weekly points)</h3>
+        <table class="sector-table" style="width:100%">
+          <tr><th>Commercial Banks</th><td class="positive">+491.56</td></tr>
+          <tr><th>Oil & Gas Exploration</th><td class="positive">+291.58</td></tr>
+          <tr><th>Cement</th><td class="positive">+202.88</td></tr>
+          <tr><th>Power Generation</th><td class="positive">+79.01</td></tr>
+          <tr><th>Technology & Comm.</th><td class="positive">+74.87</td></tr>
+          <tr><th>Pharmaceuticals</th><td class="negative">-16.88</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <h3 style="margin: 0.8rem 0 0.5rem;">🔥 Volume leaders & top index movers (Friday, April 24)</h3>
+    <table>
+      <thead><tr><th>Stock</th><th>Price (Rs)</th><th>Change</th><th>Volume (Mn)</th></tr></thead>
+      <tbody>
+        <tr><td>First National Equities (FNEL)</td><td>1.51</td><td class="negative">-11.18%</td><td>128.3</td></tr>
+        <tr><td>Bank of Punjab (BOP)</td><td>36.17</td><td class="positive">+5.70%</td><td>112.7</td></tr>
+        <tr><td>Unity Foods (UNITY)</td><td>13.43</td><td class="positive">+4.68%</td><td>98.2</td></tr>
+        <tr><td>WorldCall Telecom (WTL)</td><td>1.46</td><td class="positive">+2.82%</td><td>86.0</td></tr>
+        <tr><td>Youxel (YOUW)</td><td>7.93</td><td class="positive">+2.59%</td><td>72.5</td></tr>
+      </tbody>
+    </table>
+    <div class="stock-highlight" style="margin-top: 0.5rem;">
+      📌 <strong>Top index point contributors (Fri):</strong> MEBL (+217.70), UBL (+177.76), OGDC (+146.72), NBP (+129.43), BOP (+93.43)
+    </div>
+  </div>
+
+  <!-- 2. INVESTOR UPDATES & UPCOMING OPPORTUNITIES -->
+  <div class="card">
+    <h2 style="font-size:1.55rem; margin-bottom:0.75rem;">📈 2. Investor updates & upcoming opportunities</h2>
+    
+    <!-- IPO SECTION: TWO NEW LISTINGS -->
+    <h3 style="font-weight:700; background:#eef3ea; display:inline-block; padding:0.2rem 1rem; border-radius:30px;">🚀 Two fresh IPOs approved by SECP</h3>
+    <p style="margin: 1rem 0 0.5rem;">FY2025-26 now sees <strong>11 IPOs</strong>, reflecting robust capital market confidence despite geopolitical headwinds. Both prospectuses have been published.</p>
+    
+    <div class="grid-2col">
+      <div class="ipo-card">
+        <div style="font-weight:800; font-size:1.2rem;">⛽ Sitara Petroleum Service Ltd</div>
+        <ul style="margin-top:0.6rem; padding-left:1.2rem;">
+          <li><strong>Business:</strong> Fuel trading, retail & carriage (GO Pakistan dealer).</li>
+          <li><strong>Offer size:</strong> 168M shares (16.66% post-IPO).</li>
+          <li><strong>Method:</strong> Book Building (75% institutional/HNW, 25% retail).</li>
+          <li><strong>Goal:</strong> Raise Rs4.8 billion for expansion.</li>
+        </ul>
+      </div>
+      <div class="ipo-card">
+        <div style="font-weight:800; font-size:1.2rem;">🧩 LSE SPAC-I (Pakistan’s first SPAC)</div>
+        <ul style="margin-top:0.6rem; padding-left:1.2rem;">
+          <li><strong>Structure:</strong> Special Purpose Acquisition Company.</li>
+          <li><strong>Target:</strong> Acquire 19.04% stake in Ningbo Green Light Energy Limited.</li>
+          <li><strong>Offer size:</strong> 5M shares (Fixed price).</li>
+          <li>Pioneering <strong>SPAC regime</strong> in Pakistan – 3-year M&A window.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- share buyback engroh -->
+    <hr>
+    <div style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:1rem;">
+      <div style="flex:2;">
+        <h3 style="font-weight:800; margin-bottom:0.2rem;">🔄 ENGROH share buyback (cancellation)</h3>
+        <p><strong>Engro Holding (ENGROH)</strong> board approved buyback of up to <strong>45 million shares</strong> (≈3.7% of outstanding) worth over Rs12 billion. Purchase period: <strong>May 7 – Oct 25, 2026</strong>. Cancellation improves EPS and shareholder returns.</p>
+        <p><span style="background:#e5f6e5; padding:0.15rem 0.5rem; border-radius:20px;">📊 AKD Research: 'BUY' | TP Rs351 (Dec'26)</span> — backed by telecom turnaround, stable energy portfolio & fertilizer recovery.</p>
+      </div>
+      <div style="background:#f0f5fa; border-radius:1.2rem; padding:0.9rem 1.2rem; min-width:170px;">
+        <div style="font-weight:600;">📌 Upcoming catalyst</div>
+        <div style="font-size:1.5rem; font-weight:700;">Q1CY26 earnings</div>
+        <div>Bank Alfalah <span class="positive">▲ 55% YoY</span> (EPS Rs3.48)<br>MCB <span class="negative">▼ -11% YoY</span> (EPS Rs11.07)</div>
+      </div>
+    </div>
+    
+    <hr>
+    <!-- market outlook & key levels -->
+    <h3 style="margin-bottom:0.5rem;">🎯 Market Outlook & Technical levels</h3>
+    <div class="flex-between" style="background:#f6fafd; border-radius: 1.2rem; padding: 1rem;">
+      <div><strong>🔻 Key support zone</strong><br><span style="font-size:1.3rem; font-weight:700;">165,000 – 170,000</span><br>Selective buying emerged at lower band</div>
+      <div><strong>✨ Next resistance</strong><br><span style="font-size:1.3rem; font-weight:700;">175,000</span><br>Arif Habib Ltd expects test if diplomacy holds</div>
+      <div><strong>⚠️ Headline-driven market</strong><br>Topline Securities: geopolitical news will dictate direction</div>
+    </div>
+  </div>
+
+  <!-- Additional corporate & economic signal -->
+  <div class="card">
+    <h3 style="font-weight:700; margin-bottom:0.75rem;">🏭 Corporate snapshot & economic calendar</h3>
+    <div class="grid-2col">
+      <div>
+        <ul style="list-style-type: none; padding-left:0;">
+          <li style="margin-bottom:0.6rem;">✔ <strong>Fauji Cement (FCCL)</strong>: earnings +15% YoY → stock rose +3.14%.</li>
+          <li style="margin-bottom:0.6rem;">✔ <strong>National Bank of Pakistan (NBP)</strong>: strong momentum among top index drivers.</li>
+          <li style="margin-bottom:0.6rem;">✔ <strong>Bank Alfalah</strong> led banking sector growth (55% EPS expansion).</li>
+        </ul>
+      </div>
+      <div>
+        <div style="background:#f7f2e9; border-radius:1rem; padding:0.8rem 1rem;">
+          <div style="font-weight:700;">📆 Upcoming triggers</div>
+          <ul style="margin-left:1rem; margin-top:0.4rem;">
+            <li>Diplomacy track: US‑Iran talks follow‑up (April 26–27).</li>
+            <li>Oil & gas sector re-rating if strategic reserves plan formalized.</li>
+            <li>IPO subscription dates: Sitara Petroleum & LSE SPAC-I (details on PSX website).</li>
+            <li>End of April – full year corporate results for remaining sectors.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- KSE-100 intraweek narrative & final remarks -->
+  <div class="card">
+    <div style="display:flex; gap:0.6rem; flex-wrap:wrap; justify-content:space-between; align-items:center;">
+      <div>
+        <span class="badge-date" style="background:#2c5f2d;">📌 WEEKLY RECAP</span>
+        <p style="margin-top:0.6rem; line-height:1.5;">The PSX witnessed extreme whipsaws as the KSE-100 plunged to near 169k on Thursday but staged a powerful +1,498-point reversal on Friday after reports of Iranian FM’s visit to Islamabad. Banking and E&P sectors led the rebound while global oil remained volatile above $105/bbl. Despite weekly loss, the index remains up +35.8% FYTD, supported by strong intrinsic value buying at lower levels.</p>
+      </div>
+    </div>
+    <div style="background:linear-gradient(110deg, #eef2fa, #fff); margin-top: 1rem; padding: 1rem; border-radius: 1.2rem;">
+      <p style="font-weight:500;">💡 <strong>Analyst consensus (Arif Habib Limited, Topline Securities, AKD)</strong>: Medium-term outlook hinges on diplomatic breakthrough & oil price trajectory. Recommended to accumulate on dips with focus on banks, cash-rich E&P, and fundamentally sound cement names. The ENGROH buyback signals management confidence while new IPOs provide diversification for investors.</p>
+    </div>
+    <div class="footer-note" style="margin-top: 1.8rem;">
+      ⚠️ <strong>Disclaimer</strong>: This wrap-up is for informational & educational purposes only. Stock market investments carry risk; past performance does not guarantee future results. Please consult a licensed financial advisor before making any investment decisions. Data sourced from PSX official summaries, Mettis Global, AKD Research, Arif Habib Limited.
+    </div>
+  </div>
+
+  <!-- interactive-like fresh HTML5 semantic style -->
+  <div style="text-align: center; font-size: 0.7rem; color: #4f6f8a; margin-top: 0.5rem;">
+    MarketDesk PSX · Generated wrap-up as of April 25, 2026 | Real-time data reference from PSX, business recorder & brokerage reports
+  </div>
+</div>
+</body>
+</html>
